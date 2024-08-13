@@ -24,6 +24,7 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             max-width: 400px;
             width: 100%;
+            box-sizing: border-box; /* Ensure padding is included in the width */
         }
         .container h1 {
             font-size: 24px;
@@ -41,6 +42,7 @@
             border-top: 6px solid #333;
             border-radius: 50%;
             animation: spin 1s linear infinite;
+            display: block; /* Ensure the spinner is treated as a block element */
         }
         @keyframes spin {
             0% { transform: rotate(0deg); }
