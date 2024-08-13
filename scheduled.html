@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USPSA Maintenance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        .container h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .container p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .container .spinner {
+            margin: 20px 0;
+            width: 50px;
+            height: 50px;
+            border: 6px solid #f4f4f4;
+            border-top: 6px solid #333;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .container a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>We'll be right back!</h1>
+        <p>The USPSA website is currently undergoing scheduled maintenance.</p>
+        <div class="spinner"></div>
+        <p>We appreciate your patience and will restore service as soon as possible.</p>
+        <p>Need help? <a href="mailto:support@uspsa.org">Contact us</a></p>
+    </div>
+</body>
+</html>
