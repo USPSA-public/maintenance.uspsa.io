@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We’ve Moved - Refresh Your DNS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .instructions {
+            margin-top: 30px;
+        }
+
+        .instructions h2 {
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 5px solid #4CAF50;
+            overflow-x: auto;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>We’ve Moved to a New Server!</h1>
+        <p>Our website has been moved to a new server. If you're experiencing issues accessing the site, your DNS cache may need to be refreshed.</p>
+
+        <div class="instructions">
+            <h2>How to Refresh Your DNS Cache</h2>
+
+            <h3>Windows</h3>
+            <pre>1. Press <strong>Win + R</strong> to open the Run dialog.
+2. Type <strong>cmd</strong> and press Enter to open the Command Prompt.
+3. In the Command Prompt, type the following command and press Enter:
+   <strong>ipconfig /flushdns</strong>
+4. You should see a confirmation message that the DNS Resolver Cache has been successfully flushed.</pre>
+
+            <h3>macOS</h3>
+            <pre>1. Open Terminal (you can find it in Applications &gt; Utilities).
+2. Depending on your macOS version, type one of the following commands and press Enter:
+   <strong>macOS Monterey or later:</strong>
+   <strong>sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder</strong>
+   
+   <strong>macOS Big Sur and earlier:</strong>
+   <strong>sudo killall -HUP mDNSResponder</strong>
+3. Enter your password when prompted.
+4. There will be no confirmation message, but the DNS cache will be cleared.</pre>
+
+            <h3>Linux</h3>
+            <pre>1. Open a terminal window.
+2. Type the following command and press Enter:
+   <strong>sudo systemctl restart network-manager</strong>
+   Or, depending on your distribution:
+   <strong>sudo service network-manager restart</strong>
+3. The DNS cache will be cleared.</pre>
+
+            <h3>iOS (iPhone/iPad)</h3>
+            <pre>1. Go to <strong>Settings &gt; Wi-Fi</strong>.
+2. Tap the <strong>i</strong> next to your connected network.
+3. Tap <strong>Forget This Network</strong>.
+4. Reconnect to the same Wi-Fi network.</pre>
+
+            <h3>Android</h3>
+            <pre>1. Go to <strong>Settings &gt; Connections &gt; Wi-Fi</strong>.
+2. Long press on your connected Wi-Fi network and select <strong>Forget Network</strong>.
+3. Reconnect to the same Wi-Fi network.</pre>
+        </div>
+        <div class="footer">
+            <p>If you continue to experience issues, please contact our support team.</p>
+        </div>
+    </div>
+</body>
+
+</html>
